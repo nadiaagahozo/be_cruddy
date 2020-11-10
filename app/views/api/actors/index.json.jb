@@ -1,4 +1,4 @@
-actors.map do |actor|
+@actors.map do |actor|
 {
   
   id: actor.id,
