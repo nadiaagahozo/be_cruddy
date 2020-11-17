@@ -21,7 +21,8 @@ Rails.application.routes.draw do
     get "/url_segment/:title" => "params#url_segment"
     #insomia then url_segment/title of the movie
     #title is case sensitive
-
+    post "/users" => "users#create"
+    post "/sessions" => "sessions#create"
 
 
   end
