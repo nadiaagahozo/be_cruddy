@@ -1,0 +1,26 @@
+<%@movies.each do |movie|%>
+<h1>Movies</h1>
+<h2><%= @movie.title %></h2>
+<h3><%= @movie.year %></h3>
+<h4><%= @movie.plot %></h4>
+<% end %>
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <form action="/movies" method="post">
+    <div>
+      Name: <input type="text" name="movie" value="">
+    </div>
+    <div>
+      Price: <input type="text" name="year" value="">
+    </div>
+    <div>
+      Description: <input type="text" name="plot" value="">
+    </div>
+    <input type="submit" name"" value="Create Product">
+  </form>
+</body>
+
+</html>
